@@ -1,0 +1,43 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Title</label>
+                    <input type="text" class="form-control"
+                    id="NameTextField"
+                    placeholder="Enter the Book Title"
+                    name="Title" required>
+                </div>
+                <div class="form-group">
+                  <label for="NameTextField">Description</label>
+                  <input type="text" class="form-control" id="NameTextField"
+                  placeholder="Enter Book Description" name="Description" required>
+                </div>
+                <div class="form-group">
+                    <label for="PriceTextField">Price</label>
+                    <input type="text" class="form-control" id="PriceTextField"
+                    placeholder="Enter Book Price" name="Price"  required>
+                </div>
+                
+              <div class="form-group">
+                <label for="AuthorTextField">Author</label>
+                <input type="text" class="form-control" id="AuthorTextField"
+                placeholder="Enter Book Author" name="Author" required>
+              </div>
+              <div class="form-group">
+                <label for="GenreTextField">Genre</label>
+                <input type="text" class="form-control" id="GenreTextField"
+                placeholder="Enter Book Genre" name="Genre" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/books" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div>
+    </div>
+
+<% include ../partials/footer.ejs %>
